@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Sceptical Co-Creation: What Twelve Weeks of Building With AI Taught Me</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD5612AQGQB8sLedDIag" alt="" title="" />
+      <h1><a href="https://www.linkedin.com/pulse/sceptical-co-creation-what-twelve-weeks-building-ai-taught-pai-agzsc">Sceptical Co-Creation: What Twelve Weeks of Building With AI Taught Me</a></h1>
+    <p class="created">Created on 2026-06-06 14:39</p>
+  <p class="published">Published on 2026-06-06 15:01</p>
+  <div><p><em>The model brings the speed. You bring the doubt, the provenance, and the conscience. Take away any one of those three, and you don't have a co-creator — you have a very fast way to be confidently wrong.</em></p><p>&nbsp;Why does a brilliant model invent a fact? Why does a finished-looking dashboard quietly hide an empty table? Why does the most confident answer so often deserve the least trust?</p><p>Let me share with you a thought that took me three months and a few hundred (AI Engineering) sessions to (l)earn.</p><p>I started my journey as a user of GitHub Copilot (GHCP), Claude (AI, Cowork, Code, Dispatch) and finally M365 Copilot cowork (M365 CC). I would be discussing only about GHCP and M365 CC and reserve the experience of Claude to another write-up. Somewhere in these twelve weeks I stopped being a&nbsp;<em>user</em>&nbsp;of these tools and started being a&nbsp;supervisor. I went from typing prompts to running a studio.</p><p>&nbsp;Let me show you how, through three stories and a handful of hard-won lessons.</p><p><strong>1) I learnt the way I've learnt everything — by building, not by reading books / manuals / articles and clearing badges/certifications.</strong></p><p>I did not learn AI tools by watching demos. I learnt them the way I've learnt everything in my career — by building something real, watching it break, and fixing it. Every limitation I hit was beaten the same way: not with a cleverer prompt, but with better engineering&nbsp;<em>around</em>&nbsp;the prompt.</p><p>You will recognise the engineer's old toolkit underneath all of it.</p><p>&nbsp;</p><p><strong>Decomposition -</strong>&nbsp;There are some problems AI refuses to solve, it knows only binary responses, and my response to that reminded me of a character from a movie called Guru where the character says “Mujhe Na sunai nahi deta – I can’t hear a NO”, as it kept coming with hurdles, I kept engineering around them by decomposing the problem into something it can do.</p><p>&nbsp;</p><p><strong>Validation by instrumentation – I had over hundred sessions and I ended up building a process that opened each one of the sessions to figure out what was done in those, while I didn’t get the expected results, I proved to myself that I could instrument a solution that can be used to validate AI, against it’s own claims</strong></p><p>&nbsp;</p><p><strong>Iterative refinement – I started building a solution named Domain explorer and kept trying ideas and moved from one version to another building on top of what worked and discarding what didn’t.</strong></p><p><strong>&nbsp;</strong></p><p><strong>&nbsp;</strong></p><p>Now let me tell you about the three moments where all of this came together.</p><p><strong>Story 1 — The prototype that learned to narrate itself</strong></p><p>&nbsp;</p><p>I had a working HTML prototype of an "Agentic" supply-chain control tower for a fictional company, Auravia Foods. Lovely to click through. Impossible to share. So I built a personal Cowork skill —&nbsp;<em>webpage-to-video</em>&nbsp;— that inlines the live prototype and drives it on screen with synthetic clicks, scrolls, and little yellow spotlight rings, all synced to narration.</p><p>The output was a&nbsp;<strong>2-minute-24-second film</strong>&nbsp;that opens like a thriller:</p><p><em>"Friday, 15:42 GMT. James Whitaker is forty minutes from logging off when his control tower lights up."</em></p><p>Eight specialist agents fan out.&nbsp;<strong>Sixteen minutes</strong>&nbsp;from first alert to a signed-off action.&nbsp;<strong>$1.8M at risk. Demand on one SKU up 14%.</strong>&nbsp;An AVP with zero video tooling had turned a static page into an auto-playing explainer.</p><p>Now I needn't tell you what that does to a Monday review.</p><p>&nbsp;</p><p><strong>Story 2 — Cowork, automating Cowork</strong></p><p>&nbsp;</p><p>This is the one the engineers smile at. I wrote a small&nbsp;<strong>Playwright</strong>&nbsp;robot that opened the Cowork interface across 137 session URLs, pasted a command, watched the page, checked OneDrive for new files, and emailed me the report through Outlook.</p><p>I built a machine to supervise the machine.</p><p>&nbsp;</p><p>My instructions to Copilot now read less like prompts and more like a site manual — the house rules of a Engineer who has learnt, the expensive way, that you inspect what you expect. Which brings me to the rule that sits at the very top of that manual.</p><p>&nbsp;</p><p>So every serious deck I now generate ships with a companion document — a slide-by-slide audit of&nbsp;<em>what it says, what it claims, the clickable source, and what to say when a sceptic pushes back.</em>&nbsp;The tagline is&nbsp;<strong>"Every claim. Every source. Every click."</strong>&nbsp;The session is not done until the audit reads something like&nbsp;<em>18 of 18 links verified, 0 fabricated, 2 figures marked GAP.</em></p><p>Because if a claim cannot be grounded, the honest move is to write&nbsp;<strong>GAP</strong>&nbsp;— not to invent.</p><p><em>AI will happily build you a green dashboard. The engineering mindset is what asks it to prove the green is real. (and not a watermelon)</em></p><p>There is no fun in doing things that are easy — and there is no value in a 100% that the code cannot defend.</p><p><strong>&nbsp;</strong></p><p><strong>Story 3 — The AI that defends its own brain</strong></p><p>My entire operating manual for Cowork lives in a file called&nbsp;<a href="http://copilot-instructions.md" target="_blank">copilot-instructions.md</a>&nbsp;— the house rules, the brand discipline, the&nbsp;<em>never-fabricate</em>&nbsp;gates. And a background sync process kept lobotomising it. It would silently overwrite my carefully-built instructions with a 29-byte placeholder — literally&nbsp;{"content": "see local file"}. My AI would wake up the next session with amnesia.</p><p>So I built a guard. It treats a master copy as the single source of truth and re-applies it every session, no matter how many times the infrastructure clobbers it — a small, unglamorous script whose only job is to keep the AI's own mind intact against an environment that keeps wiping it.</p><p>Now I needn't tell you the lesson there.</p><p><em>Your AI is only as reliable as the config it can't lose.</em></p><p>The same discipline ran underneath the quieter work nobody sees — generating whole synthetic domains, 40 to 60 files each: YAML personas and KPIs, three flavours of data model (3NF, Dimensional, and full&nbsp;<strong>Data Vault</strong>&nbsp;hubs-links-satellites), Faker-and-numpy generators producing 10,000+ rows, DuckDB loaders, and dbt models with tests. To survive the model's amnesia between sessions, I wrote the hard-won bugs&nbsp;<em>into the rules themselves</em>, so the next session could not repeat them. That, really, is the whole lesson: AI will cheerfully hand you a green dashboard; the engineering mindset is what asks it to prove the green is real.</p><p>&nbsp;</p><p><strong>What the three stories have in common</strong></p><p>If I distil twelve weeks into the lessons I would hand a colleague starting tomorrow, here they are.</p><ol><li><p><strong>Treat AI output as a hypothesis, not a result</strong>&nbsp;— especially when it claims success. Design a verification step that&nbsp;<em>you</em>&nbsp;control.</p></li><li><p><strong>Ground everything.</strong>&nbsp;The single most valuable instruction I ever wrote was&nbsp;<em>"never invent facts."</em>&nbsp;Make grounding a default, not an afterthought.</p></li><li><p><strong>Invest in reusability.</strong>&nbsp;A skill iterated once and frozen beats a brilliant one-off prompt you'll never reproduce.</p></li><li><p><strong>Prize restraint over brilliance.</strong>&nbsp;My most-used tool carries a written instruction&nbsp;<em>to itself</em>&nbsp;—&nbsp;<em>do not add back the natural-language bar, the simulator, the query engine.</em>&nbsp;The model will always offer you more features, more confidence, more green ticks. Value comes from the human who knows what to&nbsp;<em>refuse.</em></p></li></ol><p>&nbsp;</p><p>Andrew Ng taught a generation that the hard part of AI was never the model. It is the discipline around it. Three months in, I can only report that he was right.</p><p><strong>&nbsp;</strong></p><p><strong>The mindset shift</strong></p><p>&nbsp;</p><p>So here is where my head landed.</p><p>Stop asking&nbsp;<em>"what can AI do for me?"</em>&nbsp;That question ends in a demo.</p><p>Start asking&nbsp;<em>"what must I build around it so its answer can be trusted when a real decision rests on it?"</em>&nbsp;That question ends in a capability.</p><p>&nbsp;</p><p>Because the value, every single time, lived in the scaffolding — the house rules, the self-grading inspector, the honest GAP-flag, the refusal to add the shiny thing. The real maturity curve of an AI practitioner is not how impressive your prompts are. It is how much you have invested in the plumbing nobody sees.</p><p><em>The model supplied the speed. The discipline supplied the trust. You will need both — and only one of them comes in the box.</em></p><p>&nbsp;</p><p>Curious to know what you think 🙏</p></div>
+</body>
+</html>

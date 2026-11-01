@@ -1,0 +1,205 @@
+<html>
+<head>
+  <title>What should a Data Scientist know about Big Data Fabric</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+      <h1><a href="https://www.linkedin.com/pulse/what-should-data-scientist-know-big-fabric-vinayak-pai">What should a Data Scientist know about Big Data Fabric</a></h1>
+    <p class="created">Created on 2016-12-04 13:15</p>
+  <p class="published">Published on 2016-12-04 13:21</p>
+  <div>
+  <p>I read two Forrester reports <a href="http://www.informatica.com/resources.asset.b0dc05c71ccfb5af89fa95a48b63c006.pdf" target="_blank">Big Data Fabric Drives Innovation And Growth</a> &nbsp;&nbsp;and <a href="http://www.informatica.com/resources.asset.b9f8b600c5699724846a72ff5274e9c0.pdf" target="_blank">The Forrester Wave™: Big Data Fabric, Q4 2016</a> recently talking about Big Data Fabric and the following is a summarization of those two articles.</p> 
+  <p>I believe a Data Scientist should know about the latest terminologies and it is important for the community to read these reports and form their opinions, the below opinion is mine and mine only and I could be totally wrong J</p> 
+  <p>one sentence summary</p> 
+  <p>===========================</p> 
+  <p>It is a collection of Big data, &nbsp;analytics and data science phenomenon that you have been reading with a new set of definitions</p> 
+  <p>Detailed Summary</p> 
+  <p>===============</p> 
+  <p>Since I have already summarized it in one sentence, if you are still reading it, then I believe you are interested in knowing what I think about it. I have been living in the world of Data warehouses for over 15 years now, so let me start with that.</p> 
+  <p>When I learnt about Data Warehouse first I heard the following also along with it</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Departments were building data mart in silos</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There was no single version of truth</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Users had their own set of reports and IT /Leadership wanted a platform where all these reports could be centralized</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data from all departments needed to be consolidated to give a cross functional view</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There were data security concerns about who should have access to what data</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Different departments used different masters, so there was a need to have a consolidated master data environment</p> 
+  <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Different departments used different tools/applications (with varied semantics) and it was important to merge all this under one metadata library</p> 
+  <p><br></p> 
+  <p>I am sure many of you would have heard of this then and even now. The problems above are compounded by the fact that traditionally there was only internal data, now there is external data due to the digital explosion. Traditionally there was only structured data, now there is variety of data, structured, unstructured and semi structured along with audio, video and sensor data. They thought that the data in a data warehouse was huge, and now they think the data getting generated is huge and there are statistics doing round on the internet that 90% of the existing data has been created in the last two years.</p> 
+  <p><br></p> 
+  <p>With this in backdrop let me highlight some of the headings from the report and my comments</p> 
+  <p><br></p> 
+  <blockquote>
+    “The business lacks competency to deal with messy, diverse, and large data” 
+  </blockquote> 
+  <p>They didn’t have it then and they don’t have it now, this is the only way IT departments justify their existence</p> 
+  <blockquote>
+    “Fragmented Hadoop data is creating integration challenges” 
+  </blockquote> 
+  <p>Data marts Vs. Data warehouses</p> 
+  <blockquote>
+    “New big data sources are creating security holes and regulatory challenges” 
+  </blockquote> 
+  <p>Security was, is and will be a big topic (refer my earlier blogs on security data science)</p> 
+  <p><br></p> 
+  <p>Benefits of Big Data Fabric as per the report and my comments</p> 
+  <p>“Providing a complete view of trusted business data” – Single version of truth then</p> 
+  <p>“Securing big data end-to-end” – Becomes important because the data is not only internal and technologies are predominantly open source (read untrusted)</p> 
+  <p>“Reducing technology management costs related to big data initiatives” – Forrester talks about Hadoop clusters being utilized only 50%, isn’t that why cloud is getting popular ?</p> 
+  <p>“Delivering a self-service and collaborative big data platform for business users” – A promise which IT has been making to businesses for ages</p> 
+  <p>“Enabling real-time sharing of data with business users, customers, and partners” – Definition of real time has changed over time, daily data in the DW was real time then. Consumers were only business users then, it has expanded now</p> 
+  <p><br></p> 
+  <p>Big Data Fabric Architecture has 6 core layers (reported as is)</p> 
+  <p><br></p> 
+  <p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data ingestion layer</p> 
+  <p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processing and persistence layer</p> 
+  <p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orchestration layer</p> 
+  <p>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data discovery layer</p> 
+  <p>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data management and intelligence layer</p> 
+  <p>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data access layer</p> 
+  <p><br></p> 
+  <p>Would request you to go back and read my learnings from DW system of those days and then read the one liner summary.</p> 
+  <p><br></p> 
+  <p>The other report evaluates vendors against the definition of Big Data Fabric and with the exception of Microsoft the other three big names of the enterprise IT are there. It is interesting to see some new names like Trifacta and waterline data there. Of course Informatica was the sponsor of these reports. Other interesting entries are Talend &amp; Denodo and then there are others </p> 
+  <p><br></p> 
+  <p>It was interesting to note that I came across this <a href="http://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016?sort=status&amp;direction=desc" target="_blank">link</a>, where Microsoft talks about each of these components mentioned above in their own terminologies and tool sets.</p> 
+  <p><br></p> 
+  <p>In my opinion, A Data Scientist should definitely read the reports and understand what is happening in this space and be prepared to talk to the customers about these terminologies.</p>
+ 
+</div>
+</body>
+</html>
